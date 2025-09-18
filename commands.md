@@ -185,7 +185,7 @@ git push origin main
 
 # Git Pull & Merge Notes (Collaboration & Safety)
 
-### 1️⃣ Why Pull Before Push
+### 1️ Why Pull Before Push
 - Pulling ensures your local branch is **up-to-date with remote**.
 - Without pulling, you risk overwriting **new commits on GitHub**.
 > Example: Suppose you add `fork13.c` locally, while at the same time Ashutosh has already updated `fork3.c` and pushed it to GitHub. 
@@ -197,7 +197,7 @@ git push origin main
 
 ---
 
-### 2️⃣ What `git pull origin main` Does
+### 2️ What `git pull origin main` Does
 `git pull origin main` = **fetch + merge**
 
 1. **Fetch phase (`git fetch`)**
@@ -212,14 +212,14 @@ git push origin main
 
 ---
 
-### 3️⃣ Why Conflicts Happen
+### 3️ Why Conflicts Happen
 - Conflict occurs when **the same lines in a file** were changed locally and remotely.
 - Git cannot decide which version to keep.
 - You manually choose one or combine changes.
 
 ---
 
-### 4️⃣ Types of Merges
+### 4️ Types of Merges
 
 1. **Fast-forward merge**
    - Your local branch has no new commits.
@@ -234,19 +234,19 @@ git push origin main
 
 ---
 
-### 5️⃣ Step-by-Step Collaborative Workflow
+### 5️ Step-by-Step Collaborative Workflow
 ```bash
-# 1️⃣ Pull latest changes from GitHub
+# 1️ Pull latest changes from GitHub
 git pull origin main
 # Updates fork3.c or any other files updated remotely
 
-# 2️⃣ Stage your new file(s)
+# 2️ Stage your new file(s)
 git add SystemCalls/fork/fork13.c
 
-# 3️⃣ Commit locally
+# 3️ Commit locally
 git commit -m "Added fork13.c"
 
-# 4️⃣ Push changes safely to GitHub
+# 4️ Push changes safely to GitHub
 git push origin main
 ```
 
@@ -275,7 +275,7 @@ gcc main.o sum.o -o main
 
 
 ## Tips
-- `~` in WSL → Your home directory (`/home/abhishek`)  
+- `~` in WSL → Your home directory (`/home/<your_username>`)  
 - Access Windows drives via `/mnt/c/` or `/mnt/d/`  
 - Snippets: Use `Tab` to expand VS Code symbols (e.g., `dbarrow` for  ↔)
 - Always `git pull` before starting new work in a shared repo to reinforce good practice.
