@@ -80,7 +80,7 @@ Press `ctrl+shift+V` to see a clear preview after editing.
 
 #### WSL → Windows
 - `cp -r <folder_in_WSL> /mnt/d/<backup_folder>` → Copy a folder from WSL to D drive  
-  Example: `cp -r ~/programs/Cpp/exec /mnt/d/Cpp/` → used to copy exec folder from WSL into CPP folder in D
+>Example: `cp -r ~/programs/Cpp/exec /mnt/d/Cpp/` → used to copy exec folder from WSL into CPP folder in D
 
 - `cp -r <folder_in_WSL> /mnt/c/<backup_folder>` → Copy a folder from WSL to C drive
 
@@ -188,7 +188,7 @@ git push origin main
 ### 1️⃣ Why Pull Before Push
 - Pulling ensures your local branch is **up-to-date with remote**.
 - Without pulling, you risk overwriting **new commits on GitHub**.
-- Example: Suppose you add `fork13.c` locally, while at the same time Ashutosh has already updated `fork3.c` and pushed it to GitHub. 
+> Example: Suppose you add `fork13.c` locally, while at the same time Ashutosh has already updated `fork3.c` and pushed it to GitHub. 
   If you try to push your changes **without first pulling**, your local branch is **behind the remote branch** because it does not include Ashutosh’s new commit. 
   Git will reject your push to prevent accidentally **overwriting or “losing” Ashutosh’s update**. 
   In other words, if Git allowed the push, your older version of `fork3.c` (from before Ashutosh’s changes) would replace the newer version on GitHub, potentially breaking code or undoing important fixes. 
